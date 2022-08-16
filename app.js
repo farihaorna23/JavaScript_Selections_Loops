@@ -85,7 +85,7 @@ function findTheValue() {
       break;
     }
 
-    //if m is at the last value and we haven't found the value yet
+    //if m is at the last value and we haven't found the value yet .
     if (m === n) {
       console.log("Did not find value");
     }
