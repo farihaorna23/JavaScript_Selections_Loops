@@ -93,3 +93,24 @@ function findTheValue() {
 }
 
 findTheValue();
+
+console.log(`Exercise 5`);
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let range = Math.round(Math.random() * (1000 - 1) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1);
+
+console.log(`FizzDivisor: ${fizzDivisor}
+BuzzDivisor: ${buzzDivisor}
+Start: ${start}
+Range: ${range} `);
+
+for (let g = start; g <= range; g++) {
+  if (g % fizzDivisor == 0 && g % buzzDivisor == 0) {
+    console.log(`${g}: FIZZBUZZ`);
+  } else if (g % fizzDivisor == 0) {
+    console.log(`${g}: FIZZ`);
+  } else if (g % buzzDivisor == 0) {
+    console.log(`${g}:BUZZ`);
+  }
+}
