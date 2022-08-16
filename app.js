@@ -58,16 +58,38 @@ while (k <= 100) {
 }
 
 console.log(`Exercise 2 with do while loop`);
-let n = 0;
+let l = 0;
 
 do {
-  if (n % 3 == 0 && n % 5 == 0) {
-    console.log(`${n}: FIZZBUZZ`);
-  } else if (n % 3 == 0) {
-    console.log(`${n}: FIZZ`);
-  } else if (n % 5 == 0) {
-    console.log(`${n}: BUZZ`);
+  if (l % 3 == 0 && l % 5 == 0) {
+    console.log(`${l}: FIZZBUZZ`);
+  } else if (l % 3 == 0) {
+    console.log(`${l}: FIZZ`);
+  } else if (l % 5 == 0) {
+    console.log(`${l}: BUZZ`);
   }
 
-  n++;
-} while (n <= 100);
+  l++;
+} while (l <= 100);
+
+console.log(`Exercise 4`);
+let value = Math.round(Math.random() * 500); // creates a random number between 0 and 500
+let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
+
+console.log(`The range is ${n} and the value is ${value}`);
+
+function findTheValue() {
+  for (let m = 0; m <= n; m++) {
+    if (m === value) {
+      console.log(`Found Value! The value is ${value}`);
+      break;
+    }
+
+    //if m is at the last value and we haven't found the value yet
+    if (m === n) {
+      console.log("Did not find value");
+    }
+  }
+}
+
+findTheValue();
